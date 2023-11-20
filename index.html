@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://kit.fontawesome.com/26f3f5328c.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>FormularioG</title>
+</head>
+
+<body>
+    <div class="container-square p-5">
+        <div class="card text-center">
+            <div class="card-header d-flex justify-content-start">
+                <h3 class="card-title">Payment form</h3>
+            </div>
+            <div class="card-body">
+                <form>
+                    <div class="row">
+                        <div class="alert alert-danger col-12 d-flex justify-content-start" role="alert"><strong>Some
+                                fields are missing</strong></div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-5"><label class="d-flex justify-content-start" for="Card">Card #</label>
+                            <input type="email" class="form-control" id="Card" aria-describedby="emailHelp"
+                                placeholder="XXXXXXXXXXXXXXX">
+                        </div>
+                        <div class="col-3"><label class="d-flex justify-content-start" for="CVC #">CVC #</label>
+                            <input type="email" class="form-control" id="CVC #" aria-describedby="emailHelp"
+                                placeholder="0000">
+                        </div>
+                        <div class="col-4"><label class="d-flex justify-content-start" for="Amount">Amount</label>
+                            <input type="email" class="form-control" id="Amount" aria-describedby="emailHelp"
+                                placeholder="Amount">
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <div class="col-6"><label class="d-flex justify-content-start" for="FName">First Name</label>
+                            <input type="email" class="form-control" id="FName" aria-describedby="emailHelp">
+                        </div>
+                        <div class="col-6"><label class="d-flex justify-content-start" for="LName">Last Name</label>
+                            <input type="email" class="form-control" id="LName" aria-describedby="emailHelp">
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <div class="col-6"><label class="d-flex justify-content-start" for="City">City</label>
+                            <input type="email" class="form-control" id="City" aria-describedby="emailHelp">
+                        </div>
+                        <div class="col-3"><label class="d-flex justify-content-start"
+                                for="exampleFormControlSelect1">State</label>
+                            <select class="form-control" id="exampleFormControlSelect1">
+                                <option>Pick a State</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                        <div class="col-3"><label class="d-flex justify-content-start" for="Postal">Postal Code</label>
+                            <input type="email" class="form-control" id="Postal" aria-describedby="emailHelp">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-6 d-flex align-items-baseline">
+                            <div class="form-group ">
+                                <label class="d-flex justify-content-start" for="radiog">We accept:</label>
+                                <div class="bg-secondary text-white p-2 d-inline" id="radiog">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                        id="inlineRadio1" value="option1">
+                                        <label class="form-check-label" for="inlineRadio1"><i
+                                            class="fa-brands fa-cc-visa"></i></label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                            id="inlineRadio2" value="option2">
+                                            <label class="form-check-label" for="inlineRadio2"><i
+                                                class="fa-brands fa-cc-mastercard"></i></label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                id="inlineRadio3" value="option3">
+                                                <label class="form-check-label" for="inlineRadio3"><i
+                                                    class="fa-brands fa-paypal"></i></label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                    id="inlineRadio4" value="option4">
+                                                    <label class="form-check-label" for="inlineRadio4"><i
+                                                        class="fa-brands fa-cc-discover"></i></label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>  
+                        <div class="col-6">
+                            <div class="form-group">
+                                <label for="exampleFormControlTextarea1"
+                                    class="d-flex justify-content-start">Message</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1"></textarea>
+                                <small id="emailHelp" class="form-text text-muted">Add any notes in here.</small>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="card-footer d-flex justify-content-end">
+                <button type="button" class="btn btn-secondary m-1">Cancel</button>
+                <button type="button" class="btn btn-primary m-1">Send</button>
+            </div>
+        </div>
+    </div>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
